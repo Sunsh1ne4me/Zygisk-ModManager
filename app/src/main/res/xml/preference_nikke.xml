@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Preference
+        android:icon="@drawable/ic_database"
+        android:key="version"
+        android:summary="@string/unknown"
+        android:title="@string/pref_module_version" />
+
+    <SwitchPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="Cheated"
+        android:title="@string/cheated"
+        app:icon="@android:drawable/ic_menu_preferences" />
+    <PreferenceCategory android:title="@string/hack">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Infinite_Ammo"
+            android:title="@string/infiniteammo"
+            app:icon="@android:drawable/ic_menu_upload" />
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:key="Invincible"
+            android:title="@string/invincible"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+        <SeekBarPreference
+            android:id="@+id/damage_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@android:drawable/ic_menu_send"
+            android:key="Damage_rate"
+            android:max="30"
+            android:title="@string/damage_rate"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

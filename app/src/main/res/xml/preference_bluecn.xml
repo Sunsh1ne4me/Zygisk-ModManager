@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Preference
+        android:icon="@drawable/ic_database"
+        android:key="version"
+        android:summary="@string/unknown"
+        android:title="@string/pref_module_version" />
+
+    <SwitchPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="Cheated"
+        android:title="@string/cheated"
+        app:icon="@android:drawable/ic_menu_preferences" />
+
+    <PreferenceCategory android:title="@string/dangerous_function">
+        <SeekBarPreference
+            android:id="@+id/criticaldamagerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_criticaldamagerate"
+            android:key="CriticalDamageRate"
+            android:max="10"
+            android:title="@string/criticaldamagerate"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/normal_function">
+
+        <SeekBarPreference
+            android:id="@+id/criticalpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_criticalpoint"
+            android:key="CriticalPoint"
+            android:max="10"
+            android:title="@string/criticalpoint"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+        <SeekBarPreference
+            android:id="@+id/dodgePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_dodgepoint"
+            android:key="DodgePoint"
+            android:max="10"
+            android:title="@string/dodge"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+        <SeekBarPreference
+            android:id="@+id/accuracyPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_accuracypoint"
+            android:key="AccuracyPoint"
+            android:max="10"
+            android:title="@string/accuracy"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+        <SeekBarPreference
+            android:id="@+id/oppressionresist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_oppressionresist"
+            android:key="OppressionResist"
+            android:max="10"
+            android:title="@string/oppressionresist"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+        <SeekBarPreference
+            android:id="@+id/stabilityPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:icon="@drawable/stat_stabilitypoint"
+            android:key="StabilityPoint"
+            android:max="10"
+            android:title="@string/stabilitypoint"
+            app:min="1"
+            app:showSeekBarValue="true"
+            tools:defaultValue="1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

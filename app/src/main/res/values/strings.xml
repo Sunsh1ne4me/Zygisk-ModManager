@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">功能管理器</string>
+    <string name="error">Error</string>
+    <string name="error_readonly">Starting with Android 13, when the setting file is inserted from the outside, it can only be read.\nAfter deleting the setting file, run the app again.</string>
+    <string name="perm_required">Permission required</string>
+    <string name="perm_required_message">Data folder access permission is required to create and edit configuration files.</string>
+    <string name="prem_required_message_simple">Requires access to the data folder.</string>
+    <string name="error_wrong_path">Please select the correct folder.</string>
+    <string name="error_file_not_in_data_folder">Only files in the data folder can be added.</string>
+    <string name="error_is_config">Configuration files cannot be added.</string>
+    <string name="error_is_data_root_folder">Only sub folders can be set.</string>
+    <string name="error_folder_not_in_data_folder">Only folders in the data folder can be selected.</string>
+    <string name="restart_app">Restart app</string>
+    <string name="no_apps">There are no apps installed.</string>
+    <string name="save">Save</string>
+    <string name="save_ok">Saved.</string>
+
+    <plurals name="show_manual_edit_countdown">
+        <item quantity="one">You are now %1$d step away to edit yourself.</item>
+        <item quantity="other">You are now %1$d steps away to edit yourself.</item>
+    </plurals>
+
+    <string name="pref_module_version">编辑Json</string>
+    <string name="unknown">点击5次</string>
+    <string name="hack">修改</string>
+    <string name="normal_function">一般功能</string>
+    <string name="dangerous_function">高危功能</string>
+    <string name="criticalpoint">暴击率倍数</string>
+    <string name="criticaldamagerate">暴击伤害倍数</string>
+    <string name="dodge">闪避倍数</string>
+    <string name="infiniteammo">无限子弹</string>
+    <string name="damage_rate">增伤倍率</string>
+    <string name="invincible">人物免伤</string>
+    <string name="cheated">开启作弊</string>
+    <string name="accuracy">命中率</string>
+    <string name="oppressionresist">群控抵抗力</string>
+    <string name="stabilitypoint">安定值</string>
+</resources>
